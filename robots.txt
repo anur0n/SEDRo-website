@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: anur0n.github.io/sitemap.xml
