@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | My Book | Made with Academic</title>
-    <link>https://anur0n.github.io/sedro-website.github.io/authors/</link>
+    <link>https://anur0n.github.io/sedro-website.github.io/authors.html</link>
       <atom:link href="https://anur0n.github.io/sedro-website.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
       <url>https://anur0n.github.io/sedro-website.github.io/images/logo_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_300x300_fit_lanczos_2.png</url>
       <title>Authors</title>
-      <link>https://anur0n.github.io/sedro-website.github.io/authors/</link>
+      <link>https://anur0n.github.io/sedro-website.github.io/authors.html</link>
     </image>
     
   </channel>
