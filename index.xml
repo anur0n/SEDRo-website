@@ -14,9 +14,9 @@
     
     <item>
       <title>Getting Started</title>
-      <link>https://anur0n.github.io/sedro-website/docs/installation/</link>
+      <link>https://anur0n.github.io/sedro-website/docs/installation.html</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>https://anur0n.github.io/sedro-website/docs/installation/</guid>
+      <guid>https://anur0n.github.io/sedro-website/docs/installation.html</guid>
       <description>&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Unity 2020.1.2f1+&lt;/li&gt;
@@ -87,9 +87,9 @@
     
     <item>
       <title>How to use</title>
-      <link>https://anur0n.github.io/sedro-website/docs/how_to_use/</link>
+      <link>https://anur0n.github.io/sedro-website/docs/how_to_use.html</link>
       <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://anur0n.github.io/sedro-website/docs/how_to_use/</guid>
+      <guid>https://anur0n.github.io/sedro-website/docs/how_to_use.html</guid>
       <description>&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Unity 2020.1.2f1+&lt;/li&gt;
@@ -160,17 +160,17 @@
     
     <item>
       <title>An Open-World Simulated Environment for Developmental Robotics</title>
-      <link>https://anur0n.github.io/sedro-website/publication/icml_laow/</link>
+      <link>https://anur0n.github.io/sedro-website/publication/icml_laow.html</link>
       <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://anur0n.github.io/sedro-website/publication/icml_laow/</guid>
+      <guid>https://anur0n.github.io/sedro-website/publication/icml_laow.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>SEDRo: A Simulated Environment for Developmental Robotics</title>
-      <link>https://anur0n.github.io/sedro-website/publication/icdl_2020/</link>
+      <link>https://anur0n.github.io/sedro-website/publication/icdl_2020.html</link>
       <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://anur0n.github.io/sedro-website/publication/icdl_2020/</guid>
+      <guid>https://anur0n.github.io/sedro-website/publication/icdl_2020.html</guid>
       <description></description>
     </item>
     
