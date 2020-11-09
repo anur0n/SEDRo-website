@@ -3,64 +3,102 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://anur0n.github.io/sedro-website.github.io/docs/chapter1/syllabus.html</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://anur0n.github.io/sedro-website.github.io/docs/chapter2/syllabus.html</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://anur0n.github.io/sedro-website.github.io/docs/chapter1.html</loc>
+    <loc>https://anur0n.github.io/sedro-website.github.io/docs/installation/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://anur0n.github.io/sedro-website.github.io/docs/chapter2.html</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <loc>https://anur0n.github.io/sedro-website.github.io/docs/how_to_use/</loc>
+    <lastmod>2020-11-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://anur0n.github.io/sedro-website.github.io/docs/chapter1/reading-list.html</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <loc>https://anur0n.github.io/sedro-website.github.io/publication-type/3/</loc>
+    <lastmod>2020-11-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://anur0n.github.io/sedro-website.github.io/docs/chapter2/reading-list.html</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <loc>https://anur0n.github.io/sedro-website.github.io/author/admin/</loc>
+    <lastmod>2020-11-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://anur0n.github.io/sedro-website.github.io/docs/chapter1/takeaways.html</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <loc>https://anur0n.github.io/sedro-website.github.io/tag/agi/</loc>
+    <lastmod>2020-11-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://anur0n.github.io/sedro-website.github.io/docs.html</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <loc>https://anur0n.github.io/sedro-website.github.io/author/aishwarya-pothula/</loc>
+    <lastmod>2020-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anur0n.github.io/sedro-website.github.io/publication/icml_laow/</loc>
+    <lastmod>2020-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anur0n.github.io/sedro-website.github.io/authors/</loc>
+    <lastmod>2020-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anur0n.github.io/sedro-website.github.io/tag/baby-agents/</loc>
+    <lastmod>2020-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anur0n.github.io/sedro-website.github.io/author/deokgun-park/</loc>
+    <lastmod>2020-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anur0n.github.io/sedro-website.github.io/tag/developmental-robotics/</loc>
+    <lastmod>2020-11-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://anur0n.github.io/sedro-website.github.io/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <lastmod>2020-11-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://anur0n.github.io/sedro-website.github.io/authors.html</loc>
+    <loc>https://anur0n.github.io/sedro-website.github.io/publication_types/</loc>
+    <lastmod>2020-11-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://anur0n.github.io/sedro-website.github.io/categories.html</loc>
+    <loc>https://anur0n.github.io/sedro-website.github.io/publication/</loc>
+    <lastmod>2020-11-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://anur0n.github.io/sedro-website.github.io/publication_types.html</loc>
+    <loc>https://anur0n.github.io/sedro-website.github.io/author/sm-mazharul-islam/</loc>
+    <lastmod>2020-11-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://anur0n.github.io/sedro-website.github.io/tags.html</loc>
+    <loc>https://anur0n.github.io/sedro-website.github.io/tags/</loc>
+    <lastmod>2020-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anur0n.github.io/sedro-website.github.io/docs/</loc>
+    <lastmod>2020-11-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anur0n.github.io/sedro-website.github.io/author/sanath-narasimhan/</loc>
+    <lastmod>2020-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anur0n.github.io/sedro-website.github.io/publication/icdl_2020/</loc>
+    <lastmod>2020-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anur0n.github.io/sedro-website.github.io/categories/</loc>
   </url>
   
 </urlset>
