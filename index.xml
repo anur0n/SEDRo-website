@@ -122,7 +122,44 @@
 &lt;/li&gt;
 &lt;li&gt;While opening the project, an error might be shown mentioning &amp;ldquo;invalid path at ../Packages/manifest.json&amp;rdquo;. Ignore the message and press continue.&lt;/li&gt;
 &lt;li&gt;Once the project is loaded into Unity Editor, got to Window &amp;gt; Package Manager. And remove the existing ML Agents package. Then, follow this &lt;a href=&#34;https://github.com/Unity-Technologies/ml-agents/blob/release_2_docs/docs/Installation.md#advanced-local-installation-for-development-1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt; to re-add the ML Agents packeage. This will fix the error mentioned in step 5.&lt;/li&gt;
-&lt;li&gt;Now, inside the Unity Editor, within &amp;ldquo;Scenes&amp;rdquo; folder existing scenes can be opened and interacted with. For example, opening the scene &amp;ldquo;MainScene&amp;rdquo; will look similar to this image-&lt;/li&gt;
+&lt;li&gt;Now, inside the Unity Editor, within &amp;ldquo;Scenes&amp;rdquo; folder existing scenes can be opened and interacted with. For example, opening the scene &amp;ldquo;MainScene&amp;rdquo; will look similar to this image-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-caption-a-boy-sits-at-a-boxy-and-a-boxy-and-a-boxy-and-a-boxy-and-a-boxy-and-a-boxy-and-a-boxy-and-a-boxy-and-a-boxy-and-a-boxy-and-a-boxy-and-a-boxy-and-a-boxy-and-a-boxy-and-a-boxy-and&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;fail_boy.jpg&#34; data-caption=&#34;Caption: a boy sits at a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and&#34;&gt;
+
+
+  &lt;img src=&#34;fail_boy.jpg&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Caption: a boy sits at a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and a boxy and
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/utaresearch/SEDRo/blob/master&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;https://github.com/utaresearch/SEDRo/blob/master/Figures/preview.png&#34; alt=&#34;Screenshot&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;frequently-asked-questions-faqs&#34;&gt;Frequently Asked Questions (FAQs)&lt;/h3&gt;
