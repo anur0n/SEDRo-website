@@ -1,56 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on My Book | Made with Academic</title>
+    <title>Authors | My Book | Made with Academic</title>
     <link>https://anur0n.github.io/authors.html</link>
-    <description>Recent content in Authors on My Book | Made with Academic</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://anur0n.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Aishwarya Pothula</title>
-      <link>https://anur0n.github.io/author/aishwarya-pothula.html</link>
-      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://anur0n.github.io/author/aishwarya-pothula.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deokgun Park</title>
-      <link>https://anur0n.github.io/author/deokgun-park.html</link>
-      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://anur0n.github.io/author/deokgun-park.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Md Ashaduzzaman Rubel Mondol</title>
-      <link>https://anur0n.github.io/author/md-ashaduzzaman-rubel-mondol.html</link>
-      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://anur0n.github.io/author/md-ashaduzzaman-rubel-mondol.html</guid>
-      <description>I&amp;rsquo;m a PhD student at the University of Texas at Arlington and also Graduate Teaching Assistant as well. Before starting my PhD I worked in the software industry for about 7 and half years.</description>
-    </item>
-    
-    <item>
-      <title>Sm Mazharul Islam</title>
-      <link>https://anur0n.github.io/author/sm-mazharul-islam.html</link>
-      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://anur0n.github.io/author/sm-mazharul-islam.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sanath Narasimhan</title>
-      <link>https://anur0n.github.io/author/sanath-narasimhan.html</link>
-      <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://anur0n.github.io/author/sanath-narasimhan.html</guid>
-      <description></description>
-    </item>
+      <atom:link href="https://anur0n.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 18 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://anur0n.github.io/images/logo_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_300x300_fit_lanczos_2.png</url>
+      <title>Authors</title>
+      <link>https://anur0n.github.io/authors.html</link>
+    </image>
     
   </channel>
 </rss>

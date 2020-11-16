@@ -1,28 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Developmental Robotics on My Book | Made with Academic</title>
+    <title>Developmental Robotics | My Book | Made with Academic</title>
     <link>https://anur0n.github.io/tag/developmental-robotics.html</link>
-    <description>Recent content in Developmental Robotics on My Book | Made with Academic</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://anur0n.github.io/tag/developmental-robotics/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://anur0n.github.io/tag/developmental-robotics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Developmental Robotics</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 18 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://anur0n.github.io/images/logo_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_300x300_fit_lanczos_2.png</url>
+      <title>Developmental Robotics</title>
+      <link>https://anur0n.github.io/tag/developmental-robotics.html</link>
+    </image>
+    
     <item>
       <title>An Open-World Simulated Environment for Developmental Robotics</title>
       <link>https://anur0n.github.io/publication/icml_laow.html</link>
       <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://anur0n.github.io/publication/icml_laow.html</guid>
-      <description>This presents our ongoing project for Simulated Environment for Developmental Robotics presented on ICML 2020 workshop (Learning in Artificial Open Worlds).</description>
+      <description></description>
     </item>
     
     <item>
       <title>SEDRo: A Simulated Environment for Developmental Robotics</title>
       <link>https://anur0n.github.io/publication/icdl_2020.html</link>
       <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://anur0n.github.io/publication/icdl_2020.html</guid>
-      <description>This presents our ongoing project for Simulated Environment for Developmental Robotics.</description>
+      <description></description>
     </item>
     
   </channel>
