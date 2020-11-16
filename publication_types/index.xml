@@ -1,16 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publication_types | My Book | Made with Academic</title>
+    <title>Publication_types on My Book | Made with Academic</title>
     <link>https://anur0n.github.io/publication_types.html</link>
-      <atom:link href="https://anur0n.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
-    <description>Publication_types</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 18 Nov 2020 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://anur0n.github.io/images/logo_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_300x300_fit_lanczos_2.png</url>
-      <title>Publication_types</title>
-      <link>https://anur0n.github.io/publication_types.html</link>
-    </image>
+    <description>Recent content in Publication_types on My Book | Made with Academic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://anur0n.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3</title>
+      <link>https://anur0n.github.io/publication-type/3.html</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://anur0n.github.io/publication-type/3.html</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
