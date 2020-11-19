@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How to use | My Book | Made with Academic</title>
-    <link>https://anur0n.github.io/docs.html</link>
+    <link>https://anur0n.github.io/docs/</link>
       <atom:link href="https://anur0n.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
     <description>How to use</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 09 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://anur0n.github.io/images/logo_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_300x300_fit_lanczos_2.png</url>
       <title>How to use</title>
-      <link>https://anur0n.github.io/docs.html</link>
+      <link>https://anur0n.github.io/docs/</link>
     </image>
     
     <item>
       <title>Getting Started</title>
-      <link>https://anur0n.github.io/docs/installation.html</link>
+      <link>https://anur0n.github.io/docs/installation/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>https://anur0n.github.io/docs/installation.html</guid>
+      <guid>https://anur0n.github.io/docs/installation/</guid>
       <description>&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Unity 2020.1.2f1+&lt;/li&gt;
@@ -87,9 +87,9 @@
     
     <item>
       <title>How to use</title>
-      <link>https://anur0n.github.io/docs/how_to_use.html</link>
+      <link>https://anur0n.github.io/docs/how_to_use/</link>
       <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://anur0n.github.io/docs/how_to_use.html</guid>
+      <guid>https://anur0n.github.io/docs/how_to_use/</guid>
       <description>&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Unity 2020.1.2f1+&lt;/li&gt;
