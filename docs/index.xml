@@ -98,7 +98,7 @@
 &lt;h3 id=&#34;installing-sedro-in-your-local-machine&#34;&gt;Installing SEDRo in your local machine&lt;/h3&gt;
 &lt;p&gt;To lauch &lt;strong&gt;SEDRo&lt;/strong&gt; in your local machine, follow the steps below:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Clone SEDRo repository into your local machine.
+&lt;li&gt;Clone SEDRo repository into your local machine from &lt;a href=&#34;https://github.com/utaresearch/SEDRo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.
 &lt;ul&gt;
 &lt;li&gt;Use &amp;ldquo;Clone with SSH&amp;rdquo; option to avoid credential failure issues.&lt;/li&gt;
 &lt;li&gt;You can use GitHub Desktop app to avoid credential failure issues.&lt;/li&gt;
