@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aishwarya Pothula | My Book | Made with Academic</title>
-    <link>https://anur0n.github.io/author/aishwarya-pothula.html</link>
+    <link>https://anur0n.github.io/author/aishwarya-pothula/</link>
       <atom:link href="https://anur0n.github.io/author/aishwarya-pothula/index.xml" rel="self" type="application/rss+xml" />
     <description>Aishwarya Pothula</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 18 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://anur0n.github.io/images/logo_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_300x300_fit_lanczos_2.png</url>
       <title>Aishwarya Pothula</title>
-      <link>https://anur0n.github.io/author/aishwarya-pothula.html</link>
+      <link>https://anur0n.github.io/author/aishwarya-pothula/</link>
     </image>
     
     <item>
       <title>An Open-World Simulated Environment for Developmental Robotics</title>
-      <link>https://anur0n.github.io/publication/icml_laow.html</link>
+      <link>https://anur0n.github.io/publication/icml_laow/</link>
       <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://anur0n.github.io/publication/icml_laow.html</guid>
+      <guid>https://anur0n.github.io/publication/icml_laow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SEDRo: A Simulated Environment for Developmental Robotics</title>
-      <link>https://anur0n.github.io/publication/icdl_2020.html</link>
+      <link>https://anur0n.github.io/publication/icdl_2020/</link>
       <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://anur0n.github.io/publication/icdl_2020.html</guid>
+      <guid>https://anur0n.github.io/publication/icdl_2020/</guid>
       <description></description>
     </item>
     
