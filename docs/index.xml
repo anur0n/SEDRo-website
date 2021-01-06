@@ -13,6 +13,39 @@
     </image>
     
     <item>
+      <title>Thing to-do in SEDRo</title>
+      <link>https://anur0n.github.io/docs/todo_list/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://anur0n.github.io/docs/todo_list/</guid>
+      <description>&lt;p&gt;The following are planned todo list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Build python wrapper for SEDRo Unity app and publish as a python package&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Place touch sensors in fingers of the agent&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find the baby&amp;rsquo;s size ratio and scale according to real baby.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find size between birth and 1 year and make an average.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vision system correction.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Need to adjust upper and lower angles[-1,0) should be scaled to [-25,0), and upperangles [0, 1] should be scaled to [0, 30] degrees&lt;/li&gt;
+&lt;li&gt;Cap Minimum focusing distance to 15.4mm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Implement joint attention for Mother: When baby looks at something for some period of time, mother will also look at the object and describe&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Change list</title>
       <link>https://anur0n.github.io/docs/changelist/</link>
       <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
