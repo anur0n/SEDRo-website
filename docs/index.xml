@@ -18,7 +18,7 @@
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://anur0n.github.io/docs/todo_list/</guid>
       <description>&lt;p&gt;The following are planned todo list:&lt;/p&gt;
-&lt;ul&gt;
+&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Build python wrapper for SEDRo Unity app and publish as a python package&lt;/p&gt;
 &lt;/li&gt;
@@ -41,7 +41,7 @@
 &lt;li&gt;
 &lt;p&gt;Implement joint attention for Mother: When baby looks at something for some period of time, mother will also look at the object and describe&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
