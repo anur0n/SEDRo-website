@@ -34,12 +34,11 @@
   
     
   
-  <meta name="description" content="The following are planned todo list:
-  Build python wrapper for SEDRo Unity app and publish as a python package
-  Place touch sensors in fingers of the agent">
+  <meta name="description" content="SEDRo provides several options to configure the environment and the agent properties.
+Environment Configuration When running the environment, you can configure which experiments/scenes to load. Also, date and time (i.e. age of the agent) can be set.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://anur0n.github.io/docs/todo_list/">
+  <link rel="alternate" hreflang="en-us" href="https://anur0n.github.io/docs/config_env/">
 
   
 
@@ -82,6 +81,14 @@
     
       
     
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
     
 
     
@@ -249,7 +256,7 @@
   <link rel="icon" type="image/png" href="../../images/icon_hu6ea3e39d9e54ace09942537133240714_469934_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="../../images/icon_hu6ea3e39d9e54ace09942537133240714_469934_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://anur0n.github.io/docs/todo_list/">
+  <link rel="canonical" href="https://anur0n.github.io/docs/config_env/">
 
   
   
@@ -265,17 +272,16 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="SEDRo">
-  <meta property="og:url" content="https://anur0n.github.io/docs/todo_list/">
-  <meta property="og:title" content="Thing to-do in SEDRo | SEDRo">
-  <meta property="og:description" content="The following are planned todo list:
-  Build python wrapper for SEDRo Unity app and publish as a python package
-  Place touch sensors in fingers of the agent"><meta property="og:image" content="https://anur0n.github.io/images/logo_hu6ea3e39d9e54ace09942537133240714_469934_300x300_fit_lanczos_2.png">
+  <meta property="og:url" content="https://anur0n.github.io/docs/config_env/">
+  <meta property="og:title" content="Configuring environment from python | SEDRo">
+  <meta property="og:description" content="SEDRo provides several options to configure the environment and the agent properties.
+Environment Configuration When running the environment, you can configure which experiments/scenes to load. Also, date and time (i.e. age of the agent) can be set."><meta property="og:image" content="https://anur0n.github.io/images/logo_hu6ea3e39d9e54ace09942537133240714_469934_300x300_fit_lanczos_2.png">
   <meta property="twitter:image" content="https://anur0n.github.io/images/logo_hu6ea3e39d9e54ace09942537133240714_469934_300x300_fit_lanczos_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2021-01-06T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-11-09T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2021-01-06T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-11-09T00:00:00&#43;00:00">
   
 
   
@@ -294,7 +300,7 @@
 
 
 
-  <title>Thing to-do in SEDRo | SEDRo</title>
+  <title>Configuring environment from python | SEDRo</title>
 
 </head>
 
@@ -527,7 +533,7 @@
       
 
 
-  <li class="active"><a href="../../docs/todo_list/">SEDRo to-do list</a></li>
+  <li class=""><a href="../../docs/todo_list/">SEDRo to-do list</a></li>
 
 
 
@@ -535,7 +541,7 @@
 
 
 
-  <li class=""><a href="../../docs/config_env/">Configuring environment from python</a></li>
+  <li class="active"><a href="../../docs/config_env/">Configuring environment from python</a></li>
 
 
 
@@ -562,7 +568,16 @@
         <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
       </ul>
 
-      <nav id="TableOfContents"></nav>
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#environment-configuration">Environment Configuration</a></li>
+        <li><a href="#agent-configuration">Agent Configuration</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
       
     </div>
@@ -573,37 +588,181 @@
       <article class="article">
 
         <div class="docs-article-container">
-          <h1>Thing to-do in SEDRo</h1>
+          <h1>Configuring environment from python</h1>
 
           <div class="article-style">
-            <p>The following are planned todo list:</p>
-<ol>
-<li>
-<p>Build python wrapper for SEDRo Unity app and publish as a python package</p>
-</li>
-<li>
-<p>Place touch sensors in fingers of the agent</p>
-</li>
-<li>
-<p>Find the baby&rsquo;s size ratio and scale according to real baby.</p>
-<ul>
-<li>Find size between birth and 1 year and make an average.</li>
-</ul>
-</li>
-<li>
-<p>Vision system correction.</p>
-<ul>
-<li>Need to adjust upper and lower angles[-1,0) should be scaled to [-25,0), and upperangles [0, 1] should be scaled to [0, 30] degrees</li>
-<li>Cap Minimum focusing distance to 15.4mm</li>
-</ul>
-</li>
-<li>
-<p>Add graviti/acceleration sensor observation</p>
-</li>
-<li>
-<p>Implement joint attention for Mother: When baby looks at something for some period of time, mother will also look at the object and describe</p>
-</li>
-</ol>
+            <p>SEDRo provides several options to configure the environment and the agent properties.</p>
+<h3 id="environment-configuration">Environment Configuration</h3>
+<p>When running the environment, you can configure which experiments/scenes to load. Also, date and time (i.e. age of the agent) can be set.</p>
+<p>Create a side channel for communicating with Unity Environment:</p>
+<pre><code class="language-python">from mlagents_envs.side_channel.side_channel import (
+    SideChannel,
+    IncomingMessage,
+    OutgoingMessage,
+)
+
+
+# Create the ConfigChannel class
+class ConfigChannel(SideChannel):
+
+    def __init__(self) -&gt; None:
+        super().__init__(uuid.UUID(&quot;621f0a70-4f87-11ea-a6bf-784f4387d1f7&quot;))
+
+    def on_message_received(self, msg: IncomingMessage) -&gt; None:
+        &quot;&quot;&quot;
+        Note: We must implement this method of the SideChannel interface to
+        receive messages from Unity
+        &quot;&quot;&quot;
+        # We simply read a string from the message and print it.
+        print(msg.read_string())
+
+    def send_config(self, data: str) -&gt; None:
+        # Add the string to an OutgoingMessage
+        msg = OutgoingMessage()
+        msg.write_string(data)
+        # We call this method to queue the data we want to send
+        super().queue_message_to_send(msg)
+</code></pre>
+<p>To configure the properties, create a dictionary and put the values. The keys should be according to the following code:</p>
+<pre><code class="language-python">class ChannelMessageParamas(enum.Enum):
+    scene_to_load = &quot;scene_to_load&quot;
+    game_day = &quot;game_day&quot;
+    game_time_of_day = &quot;game_time_of_day&quot;
+
+class Experiments(enum.Enum):
+    Main = 1
+    PaperRod = 2
+
+    
+env_config = {
+    ChannelMessageParamas.scene_to_load.value: float(Experiments.Main.value),
+    ChannelMessageParamas.game_day.value: 30,
+    #Time is should be a value in hhmm format, where hh is hour in 24 hour format and mm is minute
+    ChannelMessageParamas.game_time_of_day.value: 355
+}
+
+config = {
+    &quot;env_config&quot;:env_config
+}
+</code></pre>
+<p>Create json from the dictionary and pass it to the environment after creating UnityEnvironment:</p>
+<pre><code class="language-python">from mlagents_envs.environment import UnityEnvironment
+
+config = json.dumps(config)
+
+# Create the channel
+config_channel = ConfigChannel()
+
+# We start the communication with the Unity Editor and pass the string_log side channel as input
+env = UnityEnvironment(side_channels=[config_channel])
+config_channel.send_config(config)
+env.reset()
+</code></pre>
+<p>That&rsquo;s it. This will configure the environment.</p>
+<h3 id="agent-configuration">Agent Configuration</h3>
+<p>Similar to the environment, you can configure the agent properties.</p>
+<pre><code class="language-python">from mlagents_envs.side_channel.side_channel import (
+    SideChannel,
+    IncomingMessage,
+    OutgoingMessage,
+)
+
+
+# Create the ConfigChannel class
+class ConfigChannel(SideChannel):
+
+    def __init__(self) -&gt; None:
+        super().__init__(uuid.UUID(&quot;621f0a70-4f87-11ea-a6bf-784f4387d1f7&quot;))
+
+    def on_message_received(self, msg: IncomingMessage) -&gt; None:
+        &quot;&quot;&quot;
+        Note: We must implement this method of the SideChannel interface to
+        receive messages from Unity
+        &quot;&quot;&quot;
+        # We simply read a string from the message and print it.
+        print(msg.read_string())
+
+    def send_config(self, data: str) -&gt; None:
+        # Add the string to an OutgoingMessage
+        msg = OutgoingMessage()
+        msg.write_string(data)
+        # We call this method to queue the data we want to send
+        super().queue_message_to_send(msg)
+</code></pre>
+<p>To configure the properties, create a dictionary and put the values. The keys should be according to the following code:</p>
+<pre><code class="language-python">body_config = {
+    &quot;chest_x&quot;: 12,
+    &quot;chest_y&quot;: 12,
+    &quot;chest_z&quot;: 12,
+    &quot;spine_x&quot;: 12,
+    &quot;spine_y&quot;: 0,
+    &quot;spine_z&quot;: 0,
+    &quot;head_x&quot;: 5,
+    &quot;head_y&quot;: 5,
+    &quot;head_z&quot;: 5,
+    &quot;thigh_x&quot;: 0,
+    &quot;thigh_y&quot;: 0,
+    &quot;thigh_z&quot;: 0,
+    &quot;shin_x&quot;: 12,
+    &quot;shin_y&quot;: 0,
+    &quot;shin_z&quot;: 0,
+    &quot;foot_x&quot;: 6,
+    &quot;foot_y&quot;: 6,
+    &quot;foot_z&quot;: 6,
+    &quot;upperArm_x&quot;: 2,
+    &quot;upperArm_y&quot;: 1,
+    &quot;upperArm_z&quot;: 0,
+    &quot;lowerArm_x&quot;: 1,
+    &quot;lowerArm_y&quot;: 0,
+    &quot;lowerArm_z&quot;: 0,
+    &quot;hand_x&quot;: 1,
+    &quot;hand_y&quot;: 1,
+    &quot;hand_z&quot;: 0,
+    &quot;finger_upper_x&quot;: 0.25,
+    &quot;finger_upper_y&quot;: 0,
+    &quot;finger_upper_z&quot;: 0.25,
+    &quot;finger_lower_x&quot;: 0.25,
+    &quot;finger_lower_y&quot;: 0,
+    &quot;finger_lower_z&quot;: 0,
+}
+
+    
+config = {
+    &quot;body_config&quot;:body_config
+}
+</code></pre>
+<p>Create json from the dictionary and pass it to the environment after creating UnityEnvironment:</p>
+<pre><code class="language-python">from mlagents_envs.environment import UnityEnvironment
+
+config = json.dumps(config)
+
+# Create the channel
+config_channel = ConfigChannel()
+
+# We start the communication with the Unity Editor and pass the string_log side channel as input
+env = UnityEnvironment(side_channels=[config_channel])
+config_channel.send_config(config)
+env.reset()
+</code></pre>
+<p>To configure both environment and agent, just create a config dictionary with both properties:</p>
+<pre><code class="language-python">from mlagents_envs.environment import UnityEnvironment
+
+config = {
+    &quot;env_config&quot;:env_config,
+    &quot;body_config&quot;:body_config
+}
+
+config = json.dumps(config)
+
+# Create the channel
+config_channel = ConfigChannel()
+
+# We start the communication with the Unity Editor and pass the string_log side channel as input
+env = UnityEnvironment(side_channels=[config_channel])
+config_channel.send_config(config)
+env.reset()
+</code></pre>
+<p>To learn more about creating the environment and connecting with it see <a href="../../docs/how_to_use">How to use</a> section.</p>
 
           </div>
 
@@ -620,8 +779,15 @@
   
   
   <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="../../docs/changelist/" rel="next">Change list</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="../../docs/changelist/" rel="prev">Change list</a>
+    <a href="../../docs/how_to_use/" rel="prev">How to use</a>
   </div>
   
 </div>
@@ -631,7 +797,7 @@
         </div>
 
         <div class="body-footer">
-          <p>Last updated on Jan 6, 2021</p>
+          <p>Last updated on Nov 9, 2020</p>
 
           
 
@@ -701,6 +867,10 @@
       
 
       
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+      
 
     
 
@@ -709,7 +879,7 @@
 
     
     
-    <script>const code_highlighting = false;</script>
+    <script>const code_highlighting = true;</script>
     
 
     

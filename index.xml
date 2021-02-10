@@ -39,6 +39,9 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;Add graviti/acceleration sensor observation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;Implement joint attention for Mother: When baby looks at something for some period of time, mother will also look at the object and describe&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -57,6 +60,186 @@ You can find the current Action Vector and Observation Vector info under &lt;str
     </item>
     
     <item>
+      <title>Configuring environment from python</title>
+      <link>https://anur0n.github.io/docs/config_env/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://anur0n.github.io/docs/config_env/</guid>
+      <description>&lt;p&gt;SEDRo provides several options to configure the environment and the agent properties.&lt;/p&gt;
+&lt;h3 id=&#34;environment-configuration&#34;&gt;Environment Configuration&lt;/h3&gt;
+&lt;p&gt;When running the environment, you can configure which experiments/scenes to load. Also, date and time (i.e. age of the agent) can be set.&lt;/p&gt;
+&lt;p&gt;Create a side channel for communicating with Unity Environment:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from mlagents_envs.side_channel.side_channel import (
+    SideChannel,
+    IncomingMessage,
+    OutgoingMessage,
+)
+
+
+# Create the ConfigChannel class
+class ConfigChannel(SideChannel):
+
+    def __init__(self) -&amp;gt; None:
+        super().__init__(uuid.UUID(&amp;quot;621f0a70-4f87-11ea-a6bf-784f4387d1f7&amp;quot;))
+
+    def on_message_received(self, msg: IncomingMessage) -&amp;gt; None:
+        &amp;quot;&amp;quot;&amp;quot;
+        Note: We must implement this method of the SideChannel interface to
+        receive messages from Unity
+        &amp;quot;&amp;quot;&amp;quot;
+        # We simply read a string from the message and print it.
+        print(msg.read_string())
+
+    def send_config(self, data: str) -&amp;gt; None:
+        # Add the string to an OutgoingMessage
+        msg = OutgoingMessage()
+        msg.write_string(data)
+        # We call this method to queue the data we want to send
+        super().queue_message_to_send(msg)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To configure the properties, create a dictionary and put the values. The keys should be according to the following code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;class ChannelMessageParamas(enum.Enum):
+    scene_to_load = &amp;quot;scene_to_load&amp;quot;
+    game_day = &amp;quot;game_day&amp;quot;
+    game_time_of_day = &amp;quot;game_time_of_day&amp;quot;
+
+class Experiments(enum.Enum):
+    Main = 1
+    PaperRod = 2
+
+    
+env_config = {
+    ChannelMessageParamas.scene_to_load.value: float(Experiments.Main.value),
+    ChannelMessageParamas.game_day.value: 30,
+    #Time is should be a value in hhmm format, where hh is hour in 24 hour format and mm is minute
+    ChannelMessageParamas.game_time_of_day.value: 355
+}
+
+config = {
+    &amp;quot;env_config&amp;quot;:env_config
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Create json from the dictionary and pass it to the environment after creating UnityEnvironment:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from mlagents_envs.environment import UnityEnvironment
+
+config = json.dumps(config)
+
+# Create the channel
+config_channel = ConfigChannel()
+
+# We start the communication with the Unity Editor and pass the string_log side channel as input
+env = UnityEnvironment(side_channels=[config_channel])
+config_channel.send_config(config)
+env.reset()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That&amp;rsquo;s it. This will configure the environment.&lt;/p&gt;
+&lt;h3 id=&#34;agent-configuration&#34;&gt;Agent Configuration&lt;/h3&gt;
+&lt;p&gt;Similar to the environment, you can configure the agent properties.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from mlagents_envs.side_channel.side_channel import (
+    SideChannel,
+    IncomingMessage,
+    OutgoingMessage,
+)
+
+
+# Create the ConfigChannel class
+class ConfigChannel(SideChannel):
+
+    def __init__(self) -&amp;gt; None:
+        super().__init__(uuid.UUID(&amp;quot;621f0a70-4f87-11ea-a6bf-784f4387d1f7&amp;quot;))
+
+    def on_message_received(self, msg: IncomingMessage) -&amp;gt; None:
+        &amp;quot;&amp;quot;&amp;quot;
+        Note: We must implement this method of the SideChannel interface to
+        receive messages from Unity
+        &amp;quot;&amp;quot;&amp;quot;
+        # We simply read a string from the message and print it.
+        print(msg.read_string())
+
+    def send_config(self, data: str) -&amp;gt; None:
+        # Add the string to an OutgoingMessage
+        msg = OutgoingMessage()
+        msg.write_string(data)
+        # We call this method to queue the data we want to send
+        super().queue_message_to_send(msg)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To configure the properties, create a dictionary and put the values. The keys should be according to the following code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;body_config = {
+    &amp;quot;chest_x&amp;quot;: 12,
+    &amp;quot;chest_y&amp;quot;: 12,
+    &amp;quot;chest_z&amp;quot;: 12,
+    &amp;quot;spine_x&amp;quot;: 12,
+    &amp;quot;spine_y&amp;quot;: 0,
+    &amp;quot;spine_z&amp;quot;: 0,
+    &amp;quot;head_x&amp;quot;: 5,
+    &amp;quot;head_y&amp;quot;: 5,
+    &amp;quot;head_z&amp;quot;: 5,
+    &amp;quot;thigh_x&amp;quot;: 0,
+    &amp;quot;thigh_y&amp;quot;: 0,
+    &amp;quot;thigh_z&amp;quot;: 0,
+    &amp;quot;shin_x&amp;quot;: 12,
+    &amp;quot;shin_y&amp;quot;: 0,
+    &amp;quot;shin_z&amp;quot;: 0,
+    &amp;quot;foot_x&amp;quot;: 6,
+    &amp;quot;foot_y&amp;quot;: 6,
+    &amp;quot;foot_z&amp;quot;: 6,
+    &amp;quot;upperArm_x&amp;quot;: 2,
+    &amp;quot;upperArm_y&amp;quot;: 1,
+    &amp;quot;upperArm_z&amp;quot;: 0,
+    &amp;quot;lowerArm_x&amp;quot;: 1,
+    &amp;quot;lowerArm_y&amp;quot;: 0,
+    &amp;quot;lowerArm_z&amp;quot;: 0,
+    &amp;quot;hand_x&amp;quot;: 1,
+    &amp;quot;hand_y&amp;quot;: 1,
+    &amp;quot;hand_z&amp;quot;: 0,
+    &amp;quot;finger_upper_x&amp;quot;: 0.25,
+    &amp;quot;finger_upper_y&amp;quot;: 0,
+    &amp;quot;finger_upper_z&amp;quot;: 0.25,
+    &amp;quot;finger_lower_x&amp;quot;: 0.25,
+    &amp;quot;finger_lower_y&amp;quot;: 0,
+    &amp;quot;finger_lower_z&amp;quot;: 0,
+}
+
+    
+config = {
+    &amp;quot;body_config&amp;quot;:body_config
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Create json from the dictionary and pass it to the environment after creating UnityEnvironment:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from mlagents_envs.environment import UnityEnvironment
+
+config = json.dumps(config)
+
+# Create the channel
+config_channel = ConfigChannel()
+
+# We start the communication with the Unity Editor and pass the string_log side channel as input
+env = UnityEnvironment(side_channels=[config_channel])
+config_channel.send_config(config)
+env.reset()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To configure both environment and agent, just create a config dictionary with both properties:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from mlagents_envs.environment import UnityEnvironment
+
+config = {
+    &amp;quot;env_config&amp;quot;:env_config,
+    &amp;quot;body_config&amp;quot;:body_config
+}
+
+config = json.dumps(config)
+
+# Create the channel
+config_channel = ConfigChannel()
+
+# We start the communication with the Unity Editor and pass the string_log side channel as input
+env = UnityEnvironment(side_channels=[config_channel])
+config_channel.send_config(config)
+env.reset()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To learn more about creating the environment and connecting with it see &lt;a href=&#34;./docs/how_to_use&#34;&gt;How to use&lt;/a&gt; section.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How to use</title>
       <link>https://anur0n.github.io/docs/how_to_use/</link>
       <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
@@ -71,7 +254,7 @@ You can find the current Action Vector and Observation Vector info under &lt;str
       <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://anur0n.github.io/docs/scene_flow/</guid>
       <description>&lt;p&gt;Detail about the scenarios can be found &lt;a href=&#34;https://docs.google.com/document/d/1ulaqwIVzOX38n8uNuX8G229KzJW7hR1UCOjb1CAKTg0/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Also check the interactive flow of scenarios below:&lt;/p&gt;
+&lt;p&gt;Also check the interactive flow of scenarios below:Also check the interactive flow of scenarios below:Also check the interactive flow of scenarios below:Also check the interactive flow of scenarios below:Also check the interactive flow of scenarios below:&lt;/p&gt;
 &lt;div style=&#34;width: 960px; height: 720px; margin: 10px; position: relative;&#34;&gt;&lt;iframe allowfullscreen frameborder=&#34;0&#34; style=&#34;width:960px; height:720px&#34; src=&#34;https://lucid.app/documents/embeddedchart/22539adc-686c-4d90-9720-01e7c8a27dbd&#34; id=&#34;iS73qM0GuPbr&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
 </description>
     </item>
