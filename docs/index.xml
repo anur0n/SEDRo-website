@@ -139,7 +139,7 @@ config = {
 SEDRo.SEDRo(config_dictionary = config)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Following these instructions you should be able to see output like this:&lt;/p&gt;
-
+&lt;p&gt;
 
 
 
@@ -170,7 +170,38 @@ SEDRo.SEDRo(config_dictionary = config)
 
 &lt;/figure&gt;
 
-&lt;p&gt;To learn more about creating the environment and connecting with it see &lt;a href=&#34;../docs/how_to_use&#34;&gt;How to use&lt;/a&gt; section.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;figures/environment.png&#34; &gt;
+
+
+  &lt;img src=&#34;figures/environment.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+To learn more about creating the environment and connecting with it see &lt;a href=&#34;../docs/how_to_use&#34;&gt;How to use&lt;/a&gt; section.&lt;/p&gt;
 </description>
     </item>
     
