@@ -138,6 +138,38 @@ config = {
 
 SEDRo.SEDRo(config_dictionary = config)
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Following these instructions you should be able to see output like this:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;figures/env.png&#34; &gt;
+
+
+  &lt;img src=&#34;figures/env.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
 &lt;p&gt;To learn more about creating the environment and connecting with it see &lt;a href=&#34;./docs/how_to_use&#34;&gt;How to use&lt;/a&gt; section.&lt;/p&gt;
 </description>
     </item>
@@ -190,6 +222,38 @@ for i in range(100):
 print(&amp;quot;Done&amp;quot;)
 sedro_env.close()
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Following these instructions you should be able to see output like this:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;figures/env.png&#34; &gt;
+
+
+  &lt;img src=&#34;figures/env.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
 &lt;p&gt;The code above performs 100 steps of simulation of the agent.&lt;/p&gt;
 &lt;p&gt;From Unity documentation:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;DecisionSteps&lt;/strong&gt; — contains the data from Agents belonging to the same &amp;ldquo;Behavior&amp;rdquo; in the simulation, such as observations and rewards. Only Agents that requested a decision since the last call to env.step() are in the DecisionSteps object.&lt;/p&gt;
