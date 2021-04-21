@@ -160,41 +160,10 @@ SEDRo.SEDRo(config_dictionary = config)
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;figures/env.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;./docs/figures/env.png&#34; &gt;
 
 
-  &lt;img src=&#34;figures/env.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;figures/environment.png&#34; &gt;
-
-
-  &lt;img src=&#34;figures/environment.png&#34; alt=&#34;&#34;  &gt;
+  &lt;img src=&#34;./docs/figures/env.png&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
@@ -243,7 +212,7 @@ sedro_env = SEDRo.SEDRo()
 print(sedro_env.agent_name)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now you are ready to receive observations and send actions to the environment.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;decision_steps = sedro_env.env.get_steps(sedro_env.agent_name)[0]
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;decision_steps = sedro_env.env.get_steps(sedro_env.agent_name)[0]
 for i in range(100):
     action = np.random.randn(len(decision_steps), sedro_env.action_space)
     decision_steps, terminal_steps = sedro_env.step(action)
@@ -275,10 +244,10 @@ sedro_env.close()
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;figures/env.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;./docs/figures/env.png&#34; &gt;
 
 
-  &lt;img src=&#34;figures/env.png&#34; alt=&#34;&#34;  &gt;
+  &lt;img src=&#34;./docs/figures/env.png&#34; alt=&#34;&#34;  &gt;
 &lt;/a&gt;
 
 
