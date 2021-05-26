@@ -20,18 +20,6 @@
       <description>&lt;p&gt;The following are planned todo list:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Build python wrapper for SEDRo Unity app and publish as a python package&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Place touch sensors in fingers of the agent&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Find the baby&amp;rsquo;s size ratio and scale according to real baby.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Find size between birth and 1 year and make an average.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
 &lt;p&gt;Vision system correction.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Need to adjust upper and lower angles[-1,0) should be scaled to [-25,0), and upperangles [0, 1] should be scaled to [0, 30] degrees&lt;/li&gt;
@@ -40,6 +28,18 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Add graviti/acceleration sensor observation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DM_control has some control options, like interacting with the viewer, like play/pause/restart/zoom. Add in SEDRo?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DM_Control provides observation in a dictionary. Process and provide our observations in this way. Like key-value pairs for visual, touch, vocal observations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find the baby&amp;rsquo;s size ratio and scale according to real baby.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find size between birth and 1 year and make an average.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Implement joint attention for Mother: When baby looks at something for some period of time, mother will also look at the object and describe&lt;/p&gt;
@@ -197,7 +197,7 @@ To learn more about creating the environment and connecting with it see &lt;a hr
 &lt;p&gt;You don&amp;rsquo;t need to do anything for this. Just install sedro package using pip.&lt;/p&gt;
 &lt;h3 id=&#34;controlling-from-python&#34;&gt;Controlling from python&lt;/h3&gt;
 &lt;p&gt;First install sedro python package using:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pip install sedro
+&lt;pre&gt;&lt;code&gt;pip install --index-url https://test.pypi.org/simple/ --no-deps sedro
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now that our environment and the module is ready, import sedro package and other classes&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import sedro
